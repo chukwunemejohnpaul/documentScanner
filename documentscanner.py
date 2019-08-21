@@ -55,12 +55,12 @@ dst = np.array(dst,dtype="float32")
 maxWidth = 400
 maxHeight = 500
 
-print("hi there")
+print("Points calculated")
 
 m = cv2.getPerspectiveTransform(rect,dst)
 warped = cv2.warpPerspective(image, m, (maxWidth, maxHeight))
 
-print("dont make me laugh")
+print("Warping done")
 
 
 image = cv2.resize(image,(400,500))
